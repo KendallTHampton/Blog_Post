@@ -22,7 +22,7 @@ app.use(express.static("public"));
 
 
 
-mongoose.connect("mongodb://localhost:27017/blogDB?authSource=admin", {
+mongoose.connect("mongodb+srv://admin-kendall:Test123@cluster0.6lpn0.mongodb.net/blogDB?retryWrites=true&w=majority", {
   useNewUrlParser: true
 });
 
