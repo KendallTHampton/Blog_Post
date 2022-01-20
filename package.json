@@ -1,0 +1,19 @@
+{
+  "name": "ejs-challenge",
+  "version": "1.0.0",
+  "description": "Blog Website Created With HTML, CSS, EJS(embedded Javascript), MongoDBAtlas ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kendall Hampton",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.0.14"
+  },
+  "devDependencies": {}
+}
