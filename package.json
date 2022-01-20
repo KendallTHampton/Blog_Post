@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Blog Website Created With HTML, CSS, EJS(embedded Javascript), MongoDBAtlas ",
   "main": "app.js",
+  "engines": {
+    "node": "16.7.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Kendall Hampton",
   "license": "ISC",
