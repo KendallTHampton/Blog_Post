@@ -9,9 +9,14 @@
 
 <% posts.forEach(function(post){ %>
 
+<form action="/delete" method="post">
 <h1> <%= post.title %> </h1>
-<p> <%= post.content.substring(0,100) + " ..." %> <a href="/posts/<%=post._id%>">Read More</a> </p>
+<p> <%= post.content.substring(0,100) + " ..." %> <a href="/posts/<%=post._id%>">Read More</a> 
+<button onchange="this.form.submit()" name="deletePost" value='<%=post._id%>' class = "delete__button">Delete Post</button></p>
+</form>
 
 <% }); %>
+
+
 
 <%- include('partials/footer'); -%>

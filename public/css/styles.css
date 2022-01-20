@@ -15,6 +15,12 @@
     color: #0051ff !important;
 }
 
+.delete__button{
+    margin-left: 20px;
+}
+
+
+
 .footer-padding {
 	padding-bottom: 60px;
 }
