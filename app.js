@@ -22,7 +22,7 @@ app.use(express.static("public"));
 
 
 
-mongoose.connect("mongodb://localhost:27017/blogDB", {
+mongoose.connect("mongodb://localhost:27017/blogDB?authSource=admin", {
   useNewUrlParser: true
 });
 
@@ -133,11 +133,8 @@ app.get("/posts/:postId", (req, res) => {
 
 
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 3000;
-}
-
-app.listen(port, function() {
-  console.log("Server started succesfully");
+app.listen(process.env.PORT || 3000, function ()
+{
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env)
 });
+
